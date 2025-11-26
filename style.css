@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s;
+}
+
+#startBtn{
+    background: red;
+    color: white;
+    font-family: monospace;
+    font-size: 60px;
+    padding: 15px 30px;
+    border: 18px solid #880000;
+    box-shadow: 0px 0px 0px 16px #440000;
+    cursor: pointer;
+}
+
+#pixelArt{
+    display: grid;
+    grid-template-columns: repeat(26, 16px);
+    grid-template-rows: repeat(26, 16px);
+    gap: 0;
+    image-rendering: pixelated;
+    display: none;
+}
+
+.grid-background{
+    background-color: #222;
+    background-image:
+        linear-gradient(#0c0c0c 1px, transparent 1px),
+        linear-gradient(90deg, #0a0a0a 1px, transparent 1px);
+    background-size: 20px 20px;
+}
